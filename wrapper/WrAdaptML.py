@@ -10,6 +10,17 @@ import subprocess as sub
 
 print "\nwelcome to WrAdaptML, the AdaptML wrapper."
 
+if len(sys.argv) <= 1:
+    print 'Arguments are:'
+    print 'tree'
+    print 'init_hab_num'
+    print 'outgroup'
+    print 'converge_thresh'
+    print 'write_dir'
+    print 'rateopt'
+    print 'collapse_thresh'
+    print 'rand'
+
 # read in the variables
 inputs = sys.argv
 tree_fn = None
