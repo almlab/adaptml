@@ -1,0 +1,5 @@
+tree = example/vibrio.hsp60.tree
+outgroup = 5S_OUTGROUP
+write_dir = example/output/
+color = example/color.file
+thresh = 0.1
