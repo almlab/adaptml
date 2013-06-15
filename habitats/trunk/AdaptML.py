@@ -59,6 +59,9 @@ tree_file = open(tree_filename,"r")
 tree_string = tree_file.read().strip()
 tree = multitree.multitree()
 tree.build(tree_string)
+if tree.root != None:
+    sys.stderr.write("Input tree is rooted.  Must use unrooted tree")
+    sys.exit()
 tree_file.close()
 
 # remove zero branches

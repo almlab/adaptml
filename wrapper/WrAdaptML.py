@@ -75,10 +75,16 @@ adaptml_l.append("write_dir=" + write_d)
 adaptml_l.append("collapse_thresh=" + collapse_thresh)
 adaptml_l.append("converge_thresh=" + converge_thresh)
 adaptml_l.append("rateopt=" + rateopt)
-proc = sub.Popen(adaptml_l,stdout=sub.PIPE)
+proc = sub.Popen(adaptml_l,stdout=sub.PIPE, stderr=sub.PIPE)
 
 # wait until finished
 stdout,stderr = proc.communicate()
+
+if stderr != '':
+    print stdout
+    print 'Errors:'
+    print stderr
+    sys.exit()
 
 ##############
 # run RandML #
