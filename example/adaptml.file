@@ -1,0 +1,7 @@
+tree = example/vibrio.hsp60.tree
+init_hab_num = 10
+outgroup = 5S_OUTGROUP
+write_dir = example/output/
+rateopt = avg
+collapse_thresh = 0.1
+converge_thresh = 0.001
