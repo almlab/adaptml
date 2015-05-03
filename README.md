@@ -2,6 +2,7 @@ AdaptML
 =======
 
 [![Code Climate](https://codeclimate.com/github/almlab/adaptml/badges/gpa.svg)](https://codeclimate.com/github/almlab/adaptml)
+[![Dependency Status](https://gemnasium.com/almlab/adaptml.svg)](https://gemnasium.com/almlab/adaptml)
 
 Automatically partition a gene phylogeny by using genetic and ecological similarity
 
